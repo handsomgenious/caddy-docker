@@ -12,7 +12,14 @@ RUN VERSION=${version} PLUGINS=${plugins} /bin/sh /usr/bin/builder.sh
 # Final stage
 #
 FROM alpine:3.7
-LABEL maintainer "handsomgenious"
+ARG BUILD_DATE="2018-03-06"
+ARG VCS_REF="5552dcb"
+LABEL org.label-schema.build-date=$BUILD_DATE \
+          org.label-schema.name="caddy" \
+          org.label-schema.url="https://caddyserver.com/" \
+          org.label-schema.vcs-ref=$VCS_REF \
+          org.label-schema.vcs-url="https://github.com/mholt/caddy" \
+          org.label-schema.schema-version="1.0"
 
 LABEL caddy_version="0.10.11"
 

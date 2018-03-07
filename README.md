@@ -1,8 +1,13 @@
 # caddy
 
-A [Docker](https://docker.com) image for [Caddy](https://caddyserver.com). This image includes the following plugins: git, cache, cloudflare, minify and reauth.
+A Docker image for [Caddy](https://caddyserver.com), forked from [abiosoft/caddy-docker](https://github.com/abiosoft/caddy-docker). This image includes the following plugins: 
+  -  git
+  -  cache
+  -  cloudflare
+  -  minify
+  -  reauth.
 
-Image can be pulled via Docker Hub: [handsomgenious/caddy-docker](https://hub.docker.com/r/handsomgenious/caddy-docker)
+Image can be pulled via Docker Hub: [handsomgenious/caddy](https://hub.docker.com/r/handsomgenious/caddy)
 
 ### License
 

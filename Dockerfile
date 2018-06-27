@@ -4,7 +4,7 @@
 FROM abiosoft/caddy:builder as builder
 
 ARG version="0.10.11"
-ARG plugins="git,cache,cloudflare,minify,reauth"
+ARG plugins="cloudflare,reauth, datadog"
 
 RUN VERSION=${version} PLUGINS=${plugins} /bin/sh /usr/bin/builder.sh
 

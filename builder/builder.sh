@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VERSION=${VERSION:-"0.11.0"}
-TELEMETRY=${ENABLE_TELEMETRY:-"true"}
+TELEMETRY=${ENABLE_TELEMETRY:-"false"}
 
 # caddy
 git clone https://github.com/mholt/caddy -b "v$VERSION" /go/src/github.com/mholt/caddy \

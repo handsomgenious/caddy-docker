@@ -6,6 +6,8 @@ FROM abiosoft/caddy:builder as builder
 ARG version="0.11.0"
 ARG plugins="cloudflare,reauth,datadog"
 
+RUN go get -v github.com/abiosoft/parent
+
 RUN VERSION=${version} PLUGINS=${plugins} ENABLE_TELEMETRY=false /bin/sh /usr/bin/builder.sh
 
 #
